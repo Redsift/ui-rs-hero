@@ -29,7 +29,7 @@ gulp.task('serve', ['default', 'browser-sync'], function() {
   });
 });
 
-gulp.task('build', ['bundle-js', 'bundle-css', 'copy-core-css']);
+gulp.task('build', ['bundle-js', 'bundle-css']);
 
 gulp.task('clean', function() {
   return del(['dist/**']);
