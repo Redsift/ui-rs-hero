@@ -2,6 +2,8 @@
 
 `ui-rs-hero` is a component for creating a customizable Hero unit for your application. It is provided as a [custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements) for easy integration into your projects.
 
+> If your browser does *NOT* support *custom elements* natively (see [caniuse](http://caniuse.com/#feat=custom-elements)) you have to install the [web components shim](http://webcomponents.org/) and include it in your project before including this component!
+
 The component is part of the [RedsiftUI](https://github.com/redsift/redsift-ui) library. For a documentation of the hero unit see the [official RedsiftUI documentation](https://docs.redsift.io/docs/client-code-redsift-ui).
 
 ## Builds
@@ -77,6 +79,16 @@ setTimeout(function() {
   $hero.removeAttribute('sticky-header');
   $hero.setAttribute('Not Sticky Anymore');
 }, 3000);
+```
+
+#### CAUTION:
+
+If your browser does not support *custom elements* (and only then!) make sure to wrap the Javascript logic into the following code:
+
+```javascript
+window.addEventListener('WebComponentsReady', function(e) {
+  // setup code ...
+});
 ```
 
 # Development Setup
