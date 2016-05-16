@@ -12,7 +12,7 @@ A UMD build is available from //static.redsift.io/reusable/ui-rs-hero/latest/ui-
 
 To build locally checkout this repository and
 
-```
+```bash
 > cd ui-rs-hero
 > npm install
 > npm run build
@@ -24,7 +24,7 @@ This will create a `./dist` folder with the Javascript and CSS files.
 
 First include the CSS file in the `<head>` of your page:
 
-```
+```html
 <link rel="stylesheet" href="//static.redsift.io/reusable/ui-rs-hero/latest/css/ui-rs-hero.min.css">
 <!-- (optional) include RedsiftUI theme -->
 <link rel="stylesheet" href="//static.redsift.io/reusable/ui-rs-core/latest/css/ui-rs-core.min.css">
@@ -34,7 +34,7 @@ Note that the `ui-rs-core` theme is also included. This is only to use the typic
 
 Additionally include the Javascript on the bottom of the `<body>`:
 
-```
+```html
 <script src="//static.redsift.io/reusable/ui-rs-hero/latest/js/ui-rs-hero.umd-es2015.min.js"></script>
 ```
 
@@ -42,7 +42,7 @@ Including the Javascript already registers the custom element `rs-hero` with the
 
 Use the following HTML code to create a `rs-hero` element:
 
-```
+```html
 <rs-hero header="My Header" bg-class="-bg-hero -effect-darken" scroll-target="#scroll-anchor" sticky-header=".content">
     <h1>I'm a Hero!</h1>
 </rs-hero>
@@ -50,7 +50,7 @@ Use the following HTML code to create a `rs-hero` element:
 
 `-bg-hero` is a user provided class which defines the background of the hero unit and is optional. If you do not provide a background class a simple grey background is displayed. More detailed information is available in the [official RedsiftUI documentation](https://docs.redsift.io/docs/client-code-redsift-ui). An example CSS background is here:
 
-```
+```css
 .-bg-hero {
   background-image: url('//static.redsift.io/assets/images/taxi-1.jpg');
 }
@@ -70,7 +70,7 @@ The content put within the `rs-hero` element will be displayed vertically and ho
 
 All attributes can be set and changed with ordinary Javascript, e.g.:
 
-```
+```javascript
 var $hero = document.querySelector('rs-hero');
 
 setTimeout(function() {
