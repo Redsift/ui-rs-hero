@@ -25,8 +25,9 @@ This will create a `./dist` folder with the Javascript and CSS files.
 First include the CSS file in the `<head>` of your page:
 
 ```
-<link rel="stylesheet" href="//static.redsift.io/reusable/ui-rs-core/latest/css/ui-rs-core.min.css"> <!-- optional -->
 <link rel="stylesheet" href="//static.redsift.io/reusable/ui-rs-hero/latest/css/ui-rs-hero.min.css">
+<!-- (optional) include RedsiftUI theme -->
+<link rel="stylesheet" href="//static.redsift.io/reusable/ui-rs-core/latest/css/ui-rs-core.min.css">
 ```
 
 Note that the `ui-rs-core` theme is also included. This is only to use the typical Redsift style and purely optional. `ui-rs-hero` does **not** depend on `ui-rs-core`.
@@ -34,7 +35,7 @@ Note that the `ui-rs-core` theme is also included. This is only to use the typic
 Additionally include the Javascript on the bottom of the `<body>`:
 
 ```
-<script src="//static.redsift.io/reusable/d3-rs-hero/latest/d3-rs-hero.umd-es2015.min.js"></script>
+<script src="//static.redsift.io/reusable/ui-rs-hero/latest/js/ui-rs-hero.umd-es2015.min.js"></script>
 ```
 
 Including the Javascript already registers the custom element `rs-hero` with the browser.
