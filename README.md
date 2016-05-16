@@ -78,3 +78,13 @@ setTimeout(function() {
   $hero.setAttribute('Not Sticky Anymore');
 }, 3000);
 ```
+
+# Development Setup
+
+For development run
+
+```bash
+> npm run serve
+```
+
+within the repository folder. It will start a web server serving the content of `./samples` and supports live-reloading when a source file is changed.

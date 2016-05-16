@@ -11,7 +11,6 @@ function getTask(task) {
 
 gulp.task('bundle-js', getTask('bundle-js'));
 gulp.task('bundle-css', getTask('bundle-css'));
-gulp.task('copy-core-css', getTask('copy-core-css'));
 
 gulp.task('css-watch', ['bundle-css'], function() {
   browserSync.reload('*.css');
