@@ -25,8 +25,8 @@ This will create a `./dist` folder with the Javascript and CSS files.
 First include the CSS file in the `<head>` of your page:
 
 ```
-<link rel="stylesheet" href="//static.redsift.io/d3-rs-core/latest/ui-rs-core.min.css"> <!-- optional -->
-<link rel="stylesheet" href="//static.redsift.io/d3-rs-hero/latest/ui-rs-hero.min.css">
+<link rel="stylesheet" href="//static.redsift.io/reuseable/d3-rs-core/latest/ui-rs-core.min.css"> <!-- optional -->
+<link rel="stylesheet" href="//static.redsift.io/reuseable/d3-rs-hero/latest/ui-rs-hero.min.css">
 ```
 
 Note that the `ui-rs-core` theme is also included. This is only to use the typical Redsift style and purely optional. `ui-rs-hero` does **not** depend on `ui-rs-core`.
