@@ -8,7 +8,7 @@ class RedsiftHeroWebComponent extends HTMLElement {
   // Lifecycle:
   //----------------------------------------------------------------------------
 
-  createdCallback() {
+  attachedCallback() {
     let stickyHeaderTrigger = this.stickyHeader;
 
     this.rsHero = new RedsiftHero(this, {
