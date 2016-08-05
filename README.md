@@ -1,5 +1,9 @@
 # ui-rs-hero
 
+[![Circle CI](https://img.shields.io/circleci/project/redsift/ui-rs-hero.svg?style=flat-square)](https://circleci.com/gh/redsift/ui-rs-hero)
+[![npm](https://img.shields.io/npm/v/@redsift/ui-rs-hero.svg?style=flat-square)](https://www.npmjs.com/package/@redsift/ui-rs-hero)
+[![MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/redsift/ui-rs-hero/master/LICENSE)
+
 `ui-rs-hero` is a component for creating a customizable Hero unit for your application. It is provided as a [custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements) for easy integration into your projects.
 
 > If your browser does *NOT* support *custom elements* natively (see [caniuse](http://caniuse.com/#feat=custom-elements)) you have to install the [web components shim](http://webcomponents.org/) and include it in your project before including this component!
