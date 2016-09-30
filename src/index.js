@@ -11,7 +11,7 @@ import RedsiftHero from './js/hero.js';
   } else {
     // polyfill the platform!
     var e = document.createElement('script');
-    e.src = '/js/CustomElements.min.js';
+    e.src = 'https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.22/CustomElements.js';
     document.body.appendChild(e);
 
     window.addEventListener('WebComponentsReady', function(e) {
