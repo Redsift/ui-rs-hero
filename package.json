@@ -1,6 +1,6 @@
 {
   "name": "@redsift/ui-rs-hero",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A customizable Hero unit.",
   "keywords": [
     "redsift-ui-component",
