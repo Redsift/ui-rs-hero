@@ -1,5 +1,3 @@
-'use strict'
-
 import RedsiftHero from './hero.js';
 
 class RedsiftHeroWebComponent extends HTMLElement {

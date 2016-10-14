@@ -20,7 +20,7 @@ gulp.task('js-watch', ['bundle-js'], function() {
   browserSync.reload('*.js');
 });
 
-gulp.task('serve', ['default', 'browser-sync'], function() {
+gulp.task('serve', ['browser-sync'], function() {
   gulp.watch(['./src/**/*.{import.styl,styl,css}', './bundle.config.js'], ['css-watch']);
   gulp.watch(['./src/**/*.{js,tmpl}', './bundles/**/*.{js,tmpl}', './bundle.config.js'], ['js-watch']);
   gulp.watch('./samples/**/*.html').on('change', function() {
@@ -34,7 +34,7 @@ gulp.task('clean', function() {
   return del(['dist/**']);
 });
 
-gulp.task('default', ['build']);
+gulp.task('default', ['build', 'serve']);
 
 gulp.task('browser-sync', function() {
   browserSync.init({

@@ -102,7 +102,8 @@ function transpileES6(indexFile, dest, format, moduleName, externalMappings) {
       format: format,
       moduleName: moduleName,
       globals: externalMappings,
-      dest: dest
+      dest: dest,
+      useStrict: false // NOTE: necessary for Safari regarding web components. See https://github.com/ibm-js/delite/issues/259
     });
   }).catch(function(err) {
     console.log('rollup err: ' + err);
