@@ -3,14 +3,16 @@
 var gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
   del = require('del'),
-  bundleConfig = require('./bundle.config.js');
+  RSBundler = require('@redsift/redsift-bundler');
+
+var bundleConfig = require('./bundle.config.js');
 
 function getTask(task) {
   return require('./gulp-tasks/' + task)(gulp, bundleConfig);
 }
 
-gulp.task('bundle-js', getTask('bundle-js'));
-gulp.task('bundle-css', getTask('bundle-css'));
+gulp.task('bundle-js', RSBundler.loadTask(gulp, 'bundle-js', bundleConfig));
+gulp.task('bundle-css', RSBundler.loadTask(gulp, 'bundle-css', bundleConfig));
 
 gulp.task('css-watch', ['bundle-css'], function() {
   browserSync.reload('*.css');

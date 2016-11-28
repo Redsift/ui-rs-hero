@@ -1,5 +1,6 @@
 import { Scroll as Scroll } from '@redsift/ui-rs-core';
-import heroTmpl from '../templates/hero.tmpl';
+// NOTE: redsift-bundler doe snot support the import of string templates yet
+// import heroTmpl from '../templates/hero.tmpl';
 
 class RedsiftHero {
   constructor(el, opts) {
@@ -16,6 +17,18 @@ class RedsiftHero {
 
     this.downArrowHtml = '<div class="down-arrow"></div>';
     this.hasStickyHeader = false;
+
+    // TODO: replace with string import of template when support is added in redsift-bundler!
+    const heroTmpl = `
+      <div class="hero">
+          <div class="hero__header">
+              <h3 class="hero__header__content"><!-- yields header --></h3>
+          </div>
+          <div class="hero__container">
+              <div class="hero__content"><!-- yields content --></div>
+          </div>
+      </div>
+    `;
 
     this._setupElement(el, heroTmpl, opts);
   }
